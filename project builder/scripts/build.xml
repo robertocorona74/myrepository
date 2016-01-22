@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="Acmedata" default="simple_compile" basedir="">
+	<property name="Name" value="Acmedata DQPlus" />
+	<property name="version" value="4.0 Jboss 5.0.1" />
+	<property name="source_dir" value="..\\..\\gitproyect\\src\\gitproyect" ></property>
+	<!--
+ *** The next property is used to define the directory that is packed
+ -->
+	<target name="simple_compile">
+		<mkdir dir="/home/output/classes"/>
+		<javac srcdir="${source_dir}" destdir="/home/output/classes" classpath="" debug="on" deprecation="off" optimize="on" excludes="" includes="" encoding="ISO-8859-1" includeantruntime="false">
+			<include name="**/*.java" />
+		</javac>
+		<filter token="VERSION" value="${version}" />
+		<filter token="DATE" value="${TODAY}" />
+		<filter token="TIME" value="${TSTAMP}" />
+	</target>
+
+</project>
