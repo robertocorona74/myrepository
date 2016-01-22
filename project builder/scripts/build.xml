@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <project name="Acmedata" default="simple_compile" basedir="">
 	<property name="Name" value="Acmedata DQPlus" />
-	<property name="version" value="4.0 Jboss 5.0.1" />
+	<property name="version" value="4.0 Jboss 5.0.12" />
 	<property name="source_dir" value="..\\..\\gitproyect\\src\\gitproyect" ></property>
 	<!--
  *** The next property is used to define the directory that is packed
