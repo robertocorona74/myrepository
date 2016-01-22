@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Acmedata" default="simple_compile" basedir="">
+<project name="Acmedata" default="" basedir="">
 	<property name="Name" value="Acmedata DQPlus" />
 	<property name="version" value="4.0 Jboss 5.0.12" />
 	<property name="source_dir" value="..\\..\\gitproyect\\src\\gitproyect" ></property>
