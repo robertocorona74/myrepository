@@ -8,7 +8,7 @@
  -->
 	<target name="simple_compile">
 		<mkdir dir="/home/output/classes"/>
-		<javac srcdir="${source_dir}" destdir="/home/output/classes" classpath="" debug="on" deprecation="off" optimize="on" excludes="" includes="" encoding="ISO-8859-1" includeantruntime="false">
+		<javac srcdir="${source_dir}" destdir="outclasses" classpath="" debug="on" deprecation="off" optimize="on" excludes="" includes="" encoding="ISO-8859-1" includeantruntime="false">
 			<include name="**/*.java" />
 		</javac>
 		<filter token="VERSION" value="${version}" />
