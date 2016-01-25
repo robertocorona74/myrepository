@@ -3,11 +3,13 @@
 	<property name="Name" value="Acmedata DQPlus" />
 	<property name="version" value="4.0 Jboss 5.0.12" />
 	<property name="source_dir" value="..\\..\\gitproyect\\src\\gitproyect" ></property>
+	<property name="output_dir" value="..\\..\\outclasses" ></property>
 	<!--
  *** The next property is used to define the directory that is packed
  -->
 	<target name="simple_compile">
-		<javac srcdir="${source_dir}" destdir="outputclasses" classpath="" debug="on" deprecation="off" optimize="on" excludes="" includes="" encoding="ISO-8859-1" includeantruntime="false">
+		<mkdir dir="${output_dir}"/>
+		<javac srcdir="${source_dir}" destdir="${output_dir}" classpath="" debug="on" deprecation="off" optimize="on" excludes="" includes="" encoding="ISO-8859-1" includeantruntime="false">
 			<include name="**/*.java" />
 		</javac>
 		<filter token="VERSION" value="${version}" />
